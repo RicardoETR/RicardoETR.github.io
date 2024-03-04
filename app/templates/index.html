@@ -6,6 +6,7 @@
     <title>Mi Aplicación Flask</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,6 +20,29 @@
         </nav>
     </header>
     <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='img/ricardo.jpg') }}" alt="Ricardo Torres">
+            </div>
+            <div class="text-container">
+                <h2>Sobre mi</h2>
+                <p>
+                    Soy un profesional apasionado y comprometido en busca de oportunidades para contribuir a 
+                    proyectos significativos en el ámbito empresarial. Me entusiasma la perspectiva de aplicar 
+                    mis habilidades y conocimientos en Sistemas Computacionales y de continuar aprendiendo y 
+                    desarrollándome profesionalmente. Estoy comprometido con el crecimiento personal y profesional, 
+                    y estoy ansioso por colaborar en un entorno dinámico donde pueda contribuir de manera proactiva 
+                    al éxito del equipo y la organización.
+                </p>
+            </div>
+        </div>
+        <div class="contact-me-container">
+            <ul class="social-media-icons">
+                <li><a href="https://www.instagram.com/ricardo.etr" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.github.com/RicardoETR" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:ricardo.etr@icloud.com"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
         <!-- Aquí puedes agregar el contenido principal de tu página -->
         <p>Esta es la página de inicio de mi aplicación Flask.</p>
     </main>
