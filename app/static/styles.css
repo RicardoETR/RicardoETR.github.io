@@ -1,0 +1,103 @@
+/* Establece el tamaño de fuente base y la familia de fuentes para todo el documento */
+html {
+    font-size: 1rem; /* Esto establece el tamaño de fuente base para rem */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Establece el margen y el relleno a 0 para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto hace que el ancho y la altura incluyan el relleno y el borde */
+}
+
+/* Establece estilos básicos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    background-color: #f8f9fa;
+}
+
+header, nav {
+    width: 100%;
+}
+
+header, h1{
+    flex: 0 0 25rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+/* Establece estilos básicos para los párrafos */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+nav li {
+    margin-right: 0.625rem;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Establece un ancho máximo para el contenido principal y lo centra */
+.container {
+    width: 90%;
+    max-width: 75rem; /* 1200px */
+    margin: 0 auto;
+}
+
+.header-list{
+    font-size: 1.5rem;
+}
+
+/* Establece estilos básicos para las listas */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    
+}
+
+/* Establece estilos básicos para los enlaces */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Establece estilos básicos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Establece estilos básicos para los formularios */
+form {
+    width: 100%;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+button, input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}

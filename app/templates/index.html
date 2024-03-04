@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación Flask</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+    <h1>¿Quién es Ricardo Torres?</h1>
+        <nav>
+            <ul>
+                <li class="header-list"><a href="/">Programador</a></li>
+                <li class="header-list"><a href="/">Fotografo</a></li>
+                <li class="header-list"><a href="/">Deportista</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Aquí puedes agregar el contenido principal de tu página -->
+        <p>Esta es la página de inicio de mi aplicación Flask.</p>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
